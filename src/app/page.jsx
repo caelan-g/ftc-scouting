@@ -5,25 +5,12 @@ export default function Home() {
   return (
     <>
       <SideBar />
-      <main className="grid h-screen place-items-center px-6 py-12 sm:py-32">
-        <div className="text-center">
-          <h1 className="mt-4 font-bold dark:text-white text-black text-5xl">
-            Choose a Team
-          </h1>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href={"/greybacks"}
-              className="rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm"
-            >
-              Greybacks
-            </Link>
-            <Link
-              href={"/redbacks"}
-              className="rounded-md bg-red-400 px-3 py-2 text-sm font-semibold text-white shadow-sm"
-            >
-              Redbacks
-            </Link>
-          </div>
+      <main className="grid grid-rows-5 grid-cols-5 grid-flow-col h-screen place-items-start ml-20 px-6 py-12 sm:py-32 gap-2">
+        <div className="row-start-1 row-span-1 bg-slate-100 shadow-md p-3 rounded-md h-full w-full col-span-1 text-center text-black text-bold text-3xl">
+          Overview
+        </div>
+        <div className="p-4 rounded-lg grid place-content-center row-span-2 col-span-1 border-slate-400 border-solid">
+          bobby
         </div>
       </main>
     </>
